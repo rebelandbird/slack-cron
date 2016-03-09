@@ -1,0 +1,35 @@
+{
+  "name": "slack-cron",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node bot.js",
+    "dev": "PORT=3000 nodemon bot.js",
+    "lt": "lt --port 3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qckanemoto/slack-cron.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/qckanemoto/slack-cron/issues"
+  },
+  "homepage": "https://github.com/qckanemoto/slack-cron#readme",
+  "dependencies": {
+    "botkit": "0.0.8",
+    "botkit-storage-redis": "^1.0.1",
+    "cron": "^1.1.0",
+    "deasync": "^0.1.4",
+    "lodash": "^4.6.1",
+    "redis": "^2.5.0-1"
+  },
+  "devDependencies": {
+    "localtunnel": "^1.8.1",
+    "nodemon": "^1.9.1"
+  }
+}

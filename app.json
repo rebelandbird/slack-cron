@@ -1,0 +1,20 @@
+{
+    "name": "slack-cron",
+    "description": "cron style message scheduling for slack",
+    "repository": "https://github.com/qckanemoto/slack-cron.git",
+    "logo": "https://slack.global.ssl.fastly.net/f30f/img/services/api_200.png",
+    "keywords": ["slack", "cron"],
+    "addons": ["heroku-redis"],
+    "env": {
+        "SLACK_BOT_TOKEN": {
+            "description": "api token of slack bot"
+        },
+        "SLACK_SLASH_COMMAND_TOKEN": {
+            "description": "token of slack slash command"
+        },
+        "TIMEZONE": {
+            "description": "your timezone e.g. 'Asia/Tokyo'",
+            "required": false
+        }
+    }
+}
