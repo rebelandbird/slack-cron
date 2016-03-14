@@ -11,7 +11,7 @@ This app needs both of Bot and Slash Command.
 Create them from here:  
 https://{your-team}.slack.com/apps/manage/custom-integrations
 
-### 2. Deploy onto your heroku
+### 2. Deploy to your heroku
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
@@ -20,9 +20,19 @@ Following 2 envvars are required.
 * `SLACK_BOT_TOKEN`
 * `SLACK_SLASH_COMMAND_TOKEN`
 
-And installing [heroku-redis](https://elements.heroku.com/addons/heroku-redis) is also required.
+### 3. Add job for Heroku Scheduler
 
-### 3. Invite your Bot to the channel
+slack-cron automatically installs [Heroku Scheduler](https://elements.heroku.com/addons/scheduler) on the first deploying to your heroku.
+
+To keep Heroku awake, you should add a job like following for `Every 10 minutes`.
+
+```
+curl -s -d "" {your-app-name}.herokuapp.com >/dev/null 2>&1
+```
+
+![image](https://cloud.githubusercontent.com/assets/4360663/13732886/6219f800-e9ce-11e5-9a19-e5b9827add9f.png)
+
+### 4. Invite your Bot to the channel
 
 ![image](https://cloud.githubusercontent.com/assets/4360663/13660452/71503658-e6cd-11e5-8073-d449b17f560a.png)  
 ![image](https://cloud.githubusercontent.com/assets/4360663/13660409/0cbad36a-e6cd-11e5-9918-639c9117f514.png)  

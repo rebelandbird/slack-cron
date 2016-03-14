@@ -4,7 +4,7 @@
     "repository": "https://github.com/qckanemoto/slack-cron.git",
     "logo": "https://slack.global.ssl.fastly.net/f30f/img/services/api_200.png",
     "keywords": ["slack", "cron"],
-    "addons": ["heroku-redis"],
+    "addons": ["heroku-redis", "scheduler"],
     "env": {
         "SLACK_BOT_TOKEN": {
             "description": "api token of slack bot"
