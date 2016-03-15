@@ -2,11 +2,11 @@
   "name": "slack-cron",
   "version": "1.0.0",
   "description": "",
-  "main": "bot.js",
+  "main": "src/bot.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node bot.js",
-    "dev": "PORT=3000 nodemon bot.js",
+    "test": "jasmine",
+    "start": "node src/bot.js",
+    "dev": "source .env >/dev/null 2>&1 && PORT=3000 nodemon src/bot.js",
     "lt": "lt --port 3000"
   },
   "repository": {
@@ -29,7 +29,9 @@
     "redis": "^2.5.0-1"
   },
   "devDependencies": {
+    "jasmine": "^2.4.1",
     "localtunnel": "^1.8.1",
+    "mock-require": "^1.2.1",
     "nodemon": "^1.9.1"
   }
 }
