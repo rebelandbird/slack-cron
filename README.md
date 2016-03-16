@@ -1,5 +1,7 @@
 # slack-cron
 
+[![Build Status](https://travis-ci.org/qckanemoto/slack-cron.svg?branch=master)](https://travis-ci.org/qckanemoto/slack-cron)
+
 cron style message scheduling for slack
 
 ## Getting started
