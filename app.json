@@ -1,7 +1,7 @@
 {
     "name": "slack-cron",
     "description": "cron style message scheduling for slack",
-    "repository": "https://github.com/qckanemoto/slack-cron.git",
+    "repository": "https://github.com/ttskch/slack-cron.git",
     "logo": "https://slack.global.ssl.fastly.net/f30f/img/services/api_200.png",
     "keywords": ["slack", "cron"],
     "addons": ["heroku-redis", "scheduler"],

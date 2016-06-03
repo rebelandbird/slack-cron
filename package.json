@@ -11,15 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/qckanemoto/slack-cron.git"
+    "url": "git+https://github.com/ttskch/slack-cron.git"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/qckanemoto/slack-cron/issues"
+    "url": "https://github.com/ttskch/slack-cron/issues"
   },
-  "homepage": "https://github.com/qckanemoto/slack-cron#readme",
+  "homepage": "https://github.com/ttskch/slack-cron#readme",
   "dependencies": {
     "botkit": "0.0.8",
     "botkit-storage-redis": "^1.0.1",
